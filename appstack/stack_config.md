@@ -87,7 +87,7 @@ grant all privileges on studentapp.* to 'student'@'10.128.0.5' identified by 'st
 ```
 # yum install httpd httpd-devel -y
 # systemctl enable httpd
-# systemc start httpd
+# systemctl start httpd
 ```
 
 ### 2) Download and configure mod_jk with web server
@@ -99,7 +99,7 @@ grant all privileges on studentapp.* to 'student'@'10.128.0.5' identified by 'st
 # tar xf tomcat-connectors-1.2.42-src.tar.gz
 # cd tomcat-connectors-1.2.42-src/native
 # yum install gcc -y
-# ./configure --with-apxs=/bin/apxs
+# ./configure --with-apxs=/usr/bin/apxs
 # make
 # make install
 # cd /etc/httpd/conf.d
