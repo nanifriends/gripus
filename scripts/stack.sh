@@ -35,7 +35,7 @@ fi
 
 ## Install Web Server
 echo -n "Installing Web Server  .. "
-yum install httpd httpd-devel gcc-y &>/dev/null
+yum install httpd httpd-devel gcc -y &>/dev/null
 Status $?
 
 ## Install Tomcat Server
@@ -69,7 +69,7 @@ CREATE TABLE if not exists Students(student_id INT NOT NULL AUTO_INCREMENT,
 	student_year_passed VARCHAR(10) NOT NULL,
 	PRIMARY KEY (student_id)
 );
-grant all privileges on studentapp.* to 'student'@'10.128.0.5' identified by 'student@1'; " >/tmp/student.sql
+grant all privileges on studentapp.* to 'student'@'localhost' identified by 'student@1'; " >/tmp/student.sql
 
 echo -n "Configuring student app DB .. "
 mysql </tmp/student.sql 
