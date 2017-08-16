@@ -26,6 +26,13 @@ Status() {
 
 ### Main Program
 
+### Check root user or not.
+USERID=$(id -u)
+if [ $USERID -ne 0 ]; then
+	echo "You should be root user to perform this script"
+	exit 1
+fi
+
 ## Install Web Server
 echo -n "Installing Web Server  .. "
 yum install httpd httpd-devel gcc-y &>/dev/null
