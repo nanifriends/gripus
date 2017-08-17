@@ -44,7 +44,7 @@ yum install java -y &>/dev/null
 Status $?
 echo -n "Installing Tomcat Server .. "
 cd $TOMCAT_BASE_DIR
-wget $TOMCAT_URL -O $TOMCAT_TAR_FILE &>/dev/null
+wget $TOMCAT_URL $TOMCAT_TAR_FILE &>/dev/null
 tar xf $TOMCAT_TAR_FILE &>/dev/null 
 Status $?
 
