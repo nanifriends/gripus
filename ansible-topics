@@ -1,0 +1,104 @@
+Ansible Topics:
+
+BEFORE ANSIBLE :
+	WEB SERVER + APP SERVER + DB SERVER
+
+1) Ansible Inventory 
+	Ungrouped Hosts
+	Grouped Hosts
+	Groups of Groups
+
+2) Ansible Server Installation.
+	Ansible Server Configuration file
+		- Update Username
+		- Update Keys
+		- Update SSH Parameters
+		- Update Roles
+		- Update Inventory
+		- Update MISC paramerters
+	How ansible picks the configuration
+
+3) Setting up SSH KEYS to and checkig connection to remote nodes.
+
+4) Ansible Facts.
+	- Default facts from nodes
+	- Create custom facts on nodes.
+	- How to print facts
+
+5) Ansible Playbooks
+	- Define and use of 'hosts' parameter
+	- Define and use of 'become' parameter
+	- Define and use of 'gather_facts' parameter
+	- Define and use of 'tasks' parameter
+	- Define and use of 'vars' parameter
+	- Define and use of 'vars_files' parameter
+	- Define and use of 'vars_prompt' parameter
+	- Define and use of 'handlers' parameter
+	- Define and use of 'roles'
+
+	List of Modules to be discussed:
+		- setup 
+		- ping
+		- yum
+		- yum_repository
+		- service
+		- copy
+		- get_url
+		- shell
+		- command
+		- set_fact
+		- authorized_key
+		- user
+		- debug
+		- file
+		- find
+		- fetch
+		- hostname 
+		- include
+		- include_vars
+		- mail
+		- package 
+		- stat 
+		- unarchive
+		- gce
+		- ec2
+		- wait_for
+		- wait_for_connection
+
+
+	- Conditions
+		- when
+	- Loops
+		- with_items
+
+	- How to store output of one task and use it in another task.
+	- variables from:
+		- vars
+		- vars_files
+		- vars_prompt
+		- vars from inventory hosts
+		- vars from inventory groups
+		- Roles
+
+6) Roles
+	- Create Role
+	- Define Role
+	- Write roles
+	- Role Dependencies
+	- Variables from Roles
+	- Variable Precendence.
+
+7) MISC
+	- Ansible Vault
+	- Ansible Pull
+	- Ansible Galaxy
+
+8) Ansible in Real Time
+
+7) Ansible Tower
+	- Role-based access control
+	- Job scheduling
+	- Portal mode
+	- Fully documented REST API
+	- Tower Dashboard
+	- Cloud integration
